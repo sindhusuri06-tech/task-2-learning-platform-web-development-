@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>My Learning Platform</h1>
+    <p>Learn Anytime, Anywhere</p>
+</header>
+
+<section class="login">
+    <h2>Student Login</h2>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+</section>
+
+<section class="courses">
+    <h2>Courses</h2>
+
+    <div class="card">
+        <h3>HTML Basics</h3>
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4">
+        </video>
+        <button onclick="complete()">Complete</button>
+    </div>
+
+    <div class="card">
+        <h3>Python Basics</h3>
+        <video controls>
+            <source src="https://www.w3schools.com/html/movie.mp4">
+        </video>
+        <button onclick="complete()">Complete</button>
+    </div>
+
+</section>
+
+<section class="progress">
+    <h2>Progress</h2>
+    <p id="progress">Completed: 0%</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
